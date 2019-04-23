@@ -11783,32 +11783,6 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="0.-You-will-do-the-following:">0. You will do the following:<a class="anchor-link" href="#0.-You-will-do-the-following:">&#182;</a></h2><ol>
-<li><p>Read, complete, and run my code.</p>
-</li>
-<li><p><strong>Make substantial improvements</strong> to maximize the accurcy.</p>
-</li>
-<li><p>Convert the .IPYNB file to .HTML file.</p>
-<ul>
-<li>The HTML file must contain the code and the output after execution.</li>
-</ul>
-</li>
-<li><p>Upload this .HTML file to your Github repo.</p>
-</li>
-<li><p>Submit the link to this .HTML file to Canvas.</p>
-<ul>
-<li>Example: <a href="https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html">https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html</a></li>
-</ul>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="1.-Data-preparation">1. Data preparation<a class="anchor-link" href="#1.-Data-preparation">&#182;</a></h2>
 </div>
 </div>
@@ -12006,26 +11980,9 @@ Shape of y_val: (10000, 10)
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.-Build-a-CNN-and-tune-its-hyper-parameters">2. Build a CNN and tune its hyper-parameters<a class="anchor-link" href="#2.-Build-a-CNN-and-tune-its-hyper-parameters">&#182;</a></h2><ol>
 <li>Build a convolutional neural network model</li>
-<li>Use the validation data to tune the hyper-parameters (e.g., network structure, and optimization algorithm)<ul>
-<li>Do NOT use test data for hyper-parameter tuning!!!</li>
-</ul>
-</li>
+<li>Use the validation data to tune the hyper-parameters (e.g., network structure, and optimization algorithm)</li>
 <li>Try to achieve a validation accuracy as high as possible.</li>
 </ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Remark:">Remark:<a class="anchor-link" href="#Remark:">&#182;</a></h3><p>The following CNN is just an example. You are supposed to make <strong>substantial improvements</strong> such as:</p>
-<ul>
-<li>Add more layers.</li>
-<li>Use regularizations, e.g., dropout.</li>
-<li>Use batch normalization.</li>
-</ul>
 
 </div>
 </div>
@@ -12216,9 +12173,9 @@ Epoch 10/10
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="3.-Train-(again)-and-evaluate-the-model">3. Train (again) and evaluate the model<a class="anchor-link" href="#3.-Train-(again)-and-evaluate-the-model">&#182;</a></h2><ul>
-<li>To this end, you have found the "best" hyper-parameters. </li>
+<li>To this end, we have found the "best" hyper-parameters. </li>
 <li>Now, fix the hyper-parameters and train the network on the entire training set (all the 50K training samples)</li>
-<li>Evaluate your model on the test set.</li>
+<li>Evaluate the model on the test set.</li>
 </ul>
 
 </div>
@@ -12228,7 +12185,7 @@ Epoch 10/10
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.1.-Train-the-model-on-the-entire-training-set">3.1. Train the model on the entire training set<a class="anchor-link" href="#3.1.-Train-the-model-on-the-entire-training-set">&#182;</a></h3><p>Why? Previously, you used 40K samples for training; you wasted 10K samples for the sake of hyper-parameter tuning. Now you already know the hyper-parameters, so why not using all the 50K samples for training?</p>
+<h3 id="3.1.-Train-the-model-on-the-entire-training-set">3.1. Train the model on the entire training set<a class="anchor-link" href="#3.1.-Train-the-model-on-the-entire-training-set">&#182;</a></h3><p>Why? Previously, we used 40K samples for training; we wasted 10K samples for the sake of hyper-parameter tuning. Now we already know the hyper-parameters, so why not using all the 50K samples for training?</p>
 
 </div>
 </div>
@@ -12479,8 +12436,7 @@ Epoch 50/50
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.2.-Evaluate-the-model-on-the-test-set">3.2. Evaluate the model on the test set<a class="anchor-link" href="#3.2.-Evaluate-the-model-on-the-test-set">&#182;</a></h3><p>Do NOT used the test set until now. Make sure that your model parameters and hyper-parameters are independent of the test set.</p>
-
+<h3 id="3.2.-Evaluate-the-model-on-the-test-set">3.2. Evaluate the model on the test set<a class="anchor-link" href="#3.2.-Evaluate-the-model-on-the-test-set">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -12824,7 +12780,7 @@ Epoch 00025: val_loss did not improve from 0.53386
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model1</span><span class="o">.</span><span class="n">load_weights</span><span class="p">(</span><span class="s1">&#39;MLP.weights.best.hdf5&#39;</span><span class="p">)</span>
@@ -12847,7 +12803,7 @@ Epoch 00025: val_loss did not improve from 0.53386
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>10000/10000 [==============================] - 5s 502us/step
+<pre>10000/10000 [==============================] - 5s 499us/step
 loss = 0.5338634187221527
 accuracy = 0.8263
 </pre>
